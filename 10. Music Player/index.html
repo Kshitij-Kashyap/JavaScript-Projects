@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <img src="https://img.icons8.com/dusk/64/left.png" alt="left" />
+                </div>
+                <div class="circle">
+                    <img src="https://img.icons8.com/dusk/64/menu-squared-2.png" alt="menu-squared-2" />
+                </div>
+            </nav>
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/Playboi_Carti_-_Whole_Lotta_Red.png" class="song-img" alt="Album cover">
+            <h1>Whole Lotta Red</h1>
+            <p>Playboi Carti</p>
+            <audio id="song">
+                <source src="./DEAF KEV - Invincible  Glitch Hop  NCS - Copyright Free Music.mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div>
+                    <img width="64" height="64" src="https://img.icons8.com/dusk/64/rewind.png" alt="rewind" />
+                    <div onclick="playPause()">
+                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/circled-play.png" alt="circled-play" id="ctrlIcon" />
+                    </div>
+                    <img width="64" height="64" src="https://img.icons8.com/dusk/64/fast-forward.png" alt="fast-forward" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
